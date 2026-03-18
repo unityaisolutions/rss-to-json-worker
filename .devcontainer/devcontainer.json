@@ -1,0 +1,27 @@
+{
+  "name": "Cloudflare Wrangler + Bun",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  
+  // Installs exact Node v24.11.1, sets it as default, then installs Bun globally
+  "postCreateCommand": "nvm install 24.11.1 && nvm alias default 24.11.1 && npm install -g bun",
+  
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "npm.packageManager": "bun"
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+  
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "Wrangler Dev Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
