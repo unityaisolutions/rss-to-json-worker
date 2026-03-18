@@ -15,13 +15,5 @@
         "dbaeumer.vscode-eslint"
       ]
     }
-  },
-  
-  "forwardPorts": [8787],
-  "portsAttributes": {
-    "8787": {
-      "label": "Wrangler Dev Server",
-      "onAutoForward": "notify"
-    }
   }
 }
