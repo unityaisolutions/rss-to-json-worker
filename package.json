@@ -1,0 +1,17 @@
+{
+  "name": "rss-to-json-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that fetches and parses RSS/Atom feeds into clean JSON",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.5"
+  },
+  "devDependencies": {
+    "wrangler": "4"
+  }
+}

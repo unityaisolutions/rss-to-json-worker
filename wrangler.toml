@@ -1,0 +1,5 @@
+name = "rss-to-json-api"
+main = "src/index.js"
+compatibility_date = "2024-03-18"
+
+# Optional: Add caching or adjust limits here later if needed
